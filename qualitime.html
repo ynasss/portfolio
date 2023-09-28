@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>qualytime UX case study</title>
 </head>
-
 <body>
     <header>
         <div class="container">
@@ -35,12 +33,10 @@
                             <li class="info-wrapper_list-item"><span class="list_label">Project type:
                                 </span>Web-responsive app</li>
                             <li class="info-wrapper_list-item"><span class="list_label">Duration: </span>7 months</li>
-                            <li class="info-wrapper_list-item"><span class="list_label">Role: </span>UX Design from
-                                Concept to MVP and Prototype</li>
+                            <li class="info-wrapper_list-item"><span class="list_label">Role: </span>UX Design from Concept to MVP and Prototype</li>
                             <li class="info-wrapper_list-item"><span class="list_label">Project context:
                                 </span>Careerfoundry coursework Project</li>
-                            <li class="info-wrapper_list-item"><span class="list_label">Team size: </span>3 people - me,
-                                a Mentor, and a Tutor</li>
+                            <li class="info-wrapper_list-item"><span class="list_label">Team size: </span>3 people - me, a Mentor, and a Tutor</li>
                         </ul>
                     </div>
                     <div class="info-wrapper_content column">
@@ -84,36 +80,289 @@
                     <figcaption>A snippet of the affinity map created to draw insights from the 5 interviews with
                         potential users</figcaption>
                 </figure>
-                <div class="main-info">
-                    <p class="label">Interview Research Goals</p>
-                    <ul class="research-goals_list">
-                        <li class="research-goals_list-item">How do people choose, prepare, start, and progress in an
-                            activity;</li>
-                        <li class="research-goals_list-item">What supports people best in their hobbies- materials, best
-                            practices etc;</li>
-                        <li class="research-goals_list-item">When do people feel trust towards information sources in
-                            unfamiliar fields;</li>
+                <div class="research_container">
+                    <div class="research main-info">
+                        <p class="label">Interview Research Goals</p>
+                        <ul class="research-goals_list">
+                            <li class="research-goals_list-item">How do people choose, prepare, start, and progress in
+                                an
+                                activity;</li>
+                            <li class="research-goals_list-item">What supports people best in their hobbies- materials,
+                                best
+                                practices etc;</li>
+                            <li class="research-goals_list-item">When do people feel trust towards information sources
+                                in
+                                unfamiliar fields;</li>
+                        </ul>
+                        <p class="label">Research informed hypothesis</p>
+                        <p class="main-message">Hobbyists need a video-based learning platform, whose content creators
+                            serve
+                            as teachers and advisors, thereby fostering skill advancement and time optimization.</p>
+                        <button onclick="toggleDetails('research-details')">Read more</button>
+                    </div>
+                    <div class="research detailed-info" id="research-details">
+                        <p class="label">Research Insights</p>
+                        <p class="main-message">The 5 one hour interviews with people from the target audience uncovered
+                            that:</p>
+                        <ol class="research-insights_list">
+                            <li class="research-insights_list-item">People feel intimidated by the word “expert”.
+                                Calling
+                                the app-experts Teachers would make the hobbyists feel more comfortable reaching out.
+                            </li>
+                            <li class="research-insights_list-item">Reaching out to an online stranger is hard. People
+                                would
+                                like to know more about the teachers personality and life- provide a Teachers Profile
+                                with
+                                personal statement, credentials and photos.</li>
+                            <li class="research-insights_list-item">People prefer to learn with video tutorials, when
+                                possible. Finding the “right” learning materials is so frustrating, that people would
+                                often
+                                give up early on. Providing expert-proofed video-tutorials created by the QualyTime
+                                teachers
+                                might help with that problem.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="personas-journeys_container">
+                    <div class="personas-journeys_container main-info">
+
+                        <p class="label">Creating User Personas</p>
+                        <div class="primary_column">
+                            <p class="label">Primary</p>
+                            <p class="main-message">A die-hard-hobbyist- for them, their creations are an important part
+                                of
+                                their identity. They are skilled and know what they need to learn or improve.
+                                For them, finding the “right” teacher is a main priority.
+                            </p>
+                        </div>
+                        <div class="secondary_column">
+                            <p class="label">Secondary</p>
+                            <p class="main-message">A casual hobby-enthusiast: they enjoy spending their limited free
+                                time
+                                doing something creative or trying out new things.
+                                For them the access to curated learning materials and good advice is most important.
+                            </p>
+                        </div>
+                        <picture>
+                            <source srcset="img/qualytime/persona1_mobile.jpg" media="(max-width:767px)">
+                            <img src="img/qualytime/personas_desktop_.jpg" alt="User Personas">
+                        </picture>
+                        <button onclick="toggleDetails('journey-details')">See more</button>
+                    </div>
+                    <div class="personas-journeys detailed-info" id="journey-details">
+                        <p class="label">Creating Journey Maps</p>
+                        <p class="main-message">The journey maps provided detailed insights into what hobbyists might
+                            aim to accomplish with QualyTime, as well as the features that could facilitate these tasks
+                            more effortlessly.</p>
+                        <figure class="image_container journey-map-1">
+                            <picture>
+                                <source srcset="img/qualytime/journeymap_1.jpg" media="(max-width:767px)">
+                                <img src="img/qualytime/journeymap_1@2x.jpg" alt="journey map">
+                            </picture>
+                            <figcaption>The Journey of choosing and preparing for a hobby project</figcaption>
+                        </figure>
+                        <figure class="image_container journey-map-2">
+                            <picture>
+                                <source srcset="img/qualytime/journeymap_2-jpg" media="(max-width:767px)">
+                                <img src="img/qualytime/journeymap_2@2x.jpg" alt="journey map">
+                            </picture>
+                            <figcaption>The Journey of booking a call with a teacher</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="research-conclusion">
+                    <p class="label">Research Conclusion</p>
+                    <p class="main-message">Based on the user research, user personas, and user journey maps, I
+                        concluded that the most useful MVP for hobbyists would provide:</p>
+                    <ul class="research-conclusion_list">
+                        <li class="research-conclusion_list-item">A way to browse, sort and filter lessons;</li>
+                        <li class="research-conclusion_list-item">A Lesson Area containing information on the project,
+                            its teacher, tutorials, and support materials;</li>
+                        <li class="research-conclusion_list-item">A way to call and chat with a teacher.</li>
                     </ul>
-                    <p class="label">Research informed hypothesis</p>
-                    <p class="main-message">Hobbyists need a video-based learning platform, whose content creators serve
-                        as teachers and advisors, thereby fostering skill advancement and time optimization.</p>
-                        <button onclick="toggleDetails()">Read more</button>
                 </div>
-                <div class="detailed-info" id="details">
-                    <p class="label">Research Insights</p>
-                    <p class="main-message">The 5 one hour interviews with people from the target audience uncovered
-                        that:</p>
-                    <ol class="research-insights_list">
-                        <li class="research-insights_list-item">People feel intimidated by the word “expert”. Calling
-                            the app-experts Teachers would make the hobbyists feel more comfortable reaching out.</li>
-                        <li class="research-insights_list-item">Reaching out to an online stranger is hard. People would
-                            like to know more about the teachers personality and life- provide a Teachers Profile with
-                            personal statement, credentials and photos.</li>
-                        <li class="research-insights_list-item">People prefer to learn with video tutorials, when
-                            possible. Finding the “right” learning materials is so frustrating, that people would often
-                            give up early on. Providing expert-proofed video-tutorials created by the QualyTime teachers might help with that problem.</li>
-                    </ol>
+            </div>
+        </section>
+        <section class="ideation">
+            <div class="container">
+                <h2>Ideation</h2>
+                <div class="image_wrapper">
+                    <div class="flow_column">
+                        <figure class="img_flow">
+                            <picture>
+                                <source srcset="img/qualytime/user_flow.jpg" media="(max-width:767px)">
+                                <img src="img/qualytime/user_flow@2x.jpg" alt="user flow">
+                            </picture>
+                            <figcaption>"Book a call" &amp; "Browse tutorials" user flows</figcaption>
+                        </figure>
+                    </div>
+                    <div class="map_column">
+                        <figure class="img_map">
+                            <picture>
+                                <source srcset="img/qualytime/sitemap.jpg" media="(max-width:767px)">
+                                <img src="img/qualytime/sitemap@2x.jpg" alt="sitemap">
+                            </picture>
+                            <figcaption>Sitemap after card sorting</figcaption>
+                        </figure>
+                    </div>
                 </div>
+                <p class="label">Process</p>
+                <p class="main-message">To define the app's Information Architecture and identify its key features, I
+                    initially created User Flows. These subsequently evolved into a Sitemap, which was then refined and
+                    validated through an iterative process of card sorting.</p>
+                <div class="image-info_wrapper browsing">
+                    <div class="image_column browsing">
+                        <figure class="image_container">
+                            <picture>
+                                <source srcset="img/qualytime/lowfi_wireframes.jpg" media="(max-width:767px)">
+                                <img src="img/qualytime/lofi_wireframe@2x.jpg" alt="low fidelity wireframes">
+                            </picture>
+                            <figcaption>Low-fi Wireframes-Home screen, Browsing, and opening a Lesson-Area</figcaption>
+                        </figure>
+                    </div>
+                    <div class="info_column browsing">
+                        <p class="label">Browsing</p>
+                        <p class="main-message">The landing page serves as the initial point for users to browse and
+                            search through tutorials and hobby categories.</p>
+                    </div>
+                </div>
+                <div class="image-info_wrapper lesson-area">
+                    <div class="image_column">
+                        <figure class="image_container">
+                            <picture>
+                                <source srcset="img/qualytime/lo_mid_wireframes.jpg" media="(max-width:767px)">
+                                <img src="img/qualytime/lo_mid_wireframes@2x.jpg" alt="low and mid fidelity wireframes">
+                            </picture>
+                            <figcaption>Low and Mid fidelity wireframes of the Lesson Area</figcaption>
+                        </figure>
+                    </div>
+                    <div class="info_column lesson-area">
+                        <p class="label">Lesson Area</p>
+                        <p class="main-message">The contents of the Lesson Area are organized through a tab menu,
+                            including:</p>
+                        <ol class="lesson-area-content_list">
+                            <li class="lesson-area-content_list-item">Information on lesson details, such as content
+                                description, images, duration, difficulty, creator, and related videos
+                            </li>
+                            <li class="lesson-area-content_list-item">Video tutorials and learning materials</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="image-info_wrapper teacher-id">
+                    <div class="image_column">
+                        <figure class="image_container">
+                            <picture>
+                                <source srcset="img/qualytime/lo_mid_wireframes_teacherID.jpg"
+                                    media="(max-width:767px)">
+                                <img src="img/qualytime/lo_mid_wireframes_teacherID@2x.jpg"
+                                    alt="low and mid fidelity wireframes">
+                            </picture>
+                            <figcaption>Low and Mid fidelity wireframes of the Teacher's Profile</figcaption>
+                        </figure>
+                    </div>
+                    <div class="info_column teacher_id">
+                        <p class="label">Teacher's Profile</p>
+                        <p class="main-message">3. For the user's convenience, the third tab was transformed into a
+                            "Teacher's Profile" section. This section provides information on the teacher's creative
+                            path, personal work, and interests, offering users the option to book a call or initiate a
+                            chat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testing">
+            <div class="container">
+                <h2>Testing &amp; Iterating</h2>
+                <div class="testing main-info">
+                    <p class="label">Usability Testing</p>
+                    <p class="main-message">The app's Information Architecture and Navigation patterns underwent
+                        validation through moderated Usability Tests and an A/B Test. However, these tests also
+                        uncovered usability issues within the app's UI.</p>
+                    <button onclick="toggleDetails('test-details')">See more</button>
+                </div>
+                <div class="test-details detailed-info" id="test-details">
+                    <p class="label">Test Details</p>
+                    <p class="main-message">6 Moderated in-person and remote Usability Tests
+                        A/B Test with 20 participants, unmoderated, remote.
+                    </p>
+                    <p class="label">Test Objectives</p>
+                    <ul class="test-objectives_list">
+                        <li class="test-objectives_list-item"><span class="list_label">Asses Navigation Efficiency:
+                            </span>Evaluate the user's ability to navigate the app effortlessly, focusing on
+                            elements like search functionality, menus, browsing experience, and tab accessibility.
+                        </li>
+                        <li class="test-objectives_list-item"><span class="list_label">Ease-of-contact Evaluation:
+                            </span>Examine the simplicity and intuitiveness of contacting a teacher through the app.
+                        </li>
+                        <li class="test-objectives_list-item"><span class="list_label">Ongoing Communications
+                                Accessibility: </span>Assess how easily users can locate and access ongoing
+                            communications within the app.</li>
+                    </ul>
+                </div>
+                <div class="ab-test-image-info_wrapper main-info">
+                    <div class="ab-test image_column">
+                        <figure class="image_container">
+                            <picture>
+                                <source srcset="clickmap.jpg" media="(max-width:767px)">
+                                <img src="img/qualytime/clickmap@2x.jpg" alt="clickmap">
+                            </picture>
+                            <figcaption>Lesson's area click map: all 20 testers clicked at least once on the image
+                                carousel trying play the video-lesson.
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="ab-test info_column">
+                        <p class="label">UI Problem</p>
+                        <p class="main-message">When prompted to watch a video, testers frequently misclicked the
+                            image-carousel in the Lesson Area's first tab, leading to confusion and potential app
+                            abandonment. This issue also adversely affects the discoverability of the tab pattern.
+                        </p>
+                    </div>
+                </div>
+                <div class="soluton-image-info_wrapper main-info">
+                    <div class="solution image_column">
+                        <figure class="image_container">
+                            <picture>
+                                <source srcset="img/qualitime/lesson_area_progress.jpg" media="(max-width:767px)">
+                                <img src="img/qualytime/lesson_area_progress@2x.jpg" alt="leasson-area iteration">
+                            </picture>
+                            <figcaption>Before and after applying MD3 guidelines</figcaption>
+                        </figure>
+                    </div>
+                    <div class="solution info_column">
+                        <p class="label">Solution</p>
+                        <p class="main-message">A solution would be to implement a visually prominent tab menu and a
+                            distinctive image carousel, while also leveraging the principles of Material Design 3 to
+                            improve video discoverability.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="prototype">
+            <div class="container">
+                <div class="prototype-image-info_wrapper">
+                    <div class="prototype image_column">
+                        <figure class="image_container">
+                            <picture>
+                                <source srcset="img/qualitime/mockup.jpg" media="(max-width:767px)">
+                                <img src="img/qualytime/mockup@2x.jpg" alt="qualytime mockup">
+                            </picture>
+                            <figcaption class="link_caption"><a
+                                    href="https://www.figma.com/proto/9crukMBTKIUdY2hxl49FJL/6.5-QualyTime-Presentation?page-id=82%3A702&type=design&node-id=2101-1973&viewport=838%2C816%2C0.04&t=185kEHWdriE6F3i5-1&scaling=scale-down&starting-point-node-id=2101%3A1973&mode=design">Check
+                                    out my high-fidelity prototype</a></figcaption>
+                        </figure>
+                    </div>
+                    <div class="prototype info_column">
+                        <p class="main-message">To provide an immersive experience for all individuals interested in the
+                            QualyTime project, I developed a high-fidelity prototype. To maximize the effectiveness and
+                            functionality of the product, I adhered to the Level A usability and Level AAA color
+                            contrast standards as outlined in the Web Content Accessibility Guidelines.</p>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
