@@ -20,8 +20,10 @@ h1 {
 }
 h2 {
     font: 900 2em/1.6 'Maven Pro', sans-serif;
+    color: #B0A59E;
 }
 h3 {
-    font: 800 0.8/1.6 'Nunito Sans', sans-serif;
+    font: 800 0.8em/1.6 'Nunito Sans', sans-serif;
+    color: #282828;
     text-transform: uppercase;
 }
