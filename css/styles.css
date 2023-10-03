@@ -4,4 +4,24 @@ Accent: #FFC194
 Section Titles: #B0A59E
 text: #4E4C4C
 navigation and labels: #282828
+font-family: 'Maven Pro', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Rubik', sans-serif;
 */
+body {
+    background: #FDFAF8;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #4E4C4C;
+}
+h1 {
+    font: 700 2.4em/1.6 'Maven Pro', sans-serif;
+}
+h2 {
+    font: 900 2em/1.6 'Maven Pro', sans-serif;
+}
+h3 {
+    font: 800 0.8/1.6 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+}
