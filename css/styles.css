@@ -18,6 +18,10 @@ body {
 h1 {
     font: 700 2.4em/1.6 'Maven Pro', sans-serif;
 }
+.h1_subtitle {
+    /*why is this not working?*/
+    font: 700 1.7em/1.6 'Maven Pro', sans-serif;
+}
 h2 {
     font: 900 2em/1.6 'Maven Pro', sans-serif;
     color: #B0A59E;
@@ -26,4 +30,13 @@ h3 {
     font: 800 0.8em/1.6 'Nunito Sans', sans-serif;
     color: #282828;
     text-transform: uppercase;
+}
+.nav_button {
+    font: 500 1em/1.6 'Rubik', sans-serif;
+    color: #282828;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+.nav {
+    list-style: none;
 }
