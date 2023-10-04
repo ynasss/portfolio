@@ -39,7 +39,7 @@ h3 {
     background-color: transparent;
     padding: 8px 16px;
     border-radius: 16px;
-    transition: 0.3s ease-in;
+    transition: 0.2s ease-in;
 }
 .nav_button:hover {
     background-color: #FFC194;
@@ -51,8 +51,7 @@ h3 {
 .nav_button:active{
     background: linear-gradient(to bottom, #FFC194, #A1653A);
     font-weight: 700;
-    color: #6d6d6d;
-
+    color: #ffffff;
 }
 .nav {
     list-style: none;
