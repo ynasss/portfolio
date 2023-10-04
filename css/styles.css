@@ -32,14 +32,47 @@ h3 {
     text-transform: uppercase;
 }
 .nav_button {
+    display: inline-block;
     font: 500 1em/1.6 'Rubik', sans-serif;
     color: #282828;
-    text-transform: lowercase;
     text-decoration: none;
+    background-color: transparent;
+    padding: 8px 16px;
+    border-radius: 16px;
+    transition: 0.3s ease-in;
+}
+.nav_button:hover {
+    background-color: #FFC194;
+    font-weight: 700;
+}
+.nav_button:focus {
+    background-color: rgba (255, 193, 148, 0.5)
+}
+.nav_button:active{
+    background: linear-gradient(to bottom, #FFC194, #A1653A);
+    font-weight: 700;
+    color: #6d6d6d;
+
 }
 .nav {
     list-style: none;
 }
 img {
     width: 100%;
+}
+.contact {
+    color:blue;
+    text-decoration: none;
+}
+.contact:visited {
+    color: purple;
+}
+.contact:hover,
+.contact:focus {
+    text-decoration: underline;
+}
+.contact:active {
+    color:black;
+    text-decoration: underline;
+    font-weight: bold;
 }
