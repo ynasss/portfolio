@@ -31,6 +31,12 @@ h3 {
     color: #282828;
     text-transform: uppercase;
 }
+h4 {
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.2;
+    font-family: 'Rubik', sans-serif;
+}
 .nav_button {
     display: inline-block;
     font: 500 1em/1.6 'Rubik', sans-serif;
