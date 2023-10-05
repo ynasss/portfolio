@@ -91,6 +91,7 @@ a:active {
 }
 .button:hover {
     box-shadow: 0px 1px 16px rgba(105, 56, 21, 0.5);
+    /*shadow does not respond to offset values*/
 }
 .button:focus {
     box-shadow: none;
