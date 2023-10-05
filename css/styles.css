@@ -55,9 +55,27 @@ h4 {
     line-height: 1.2;
     font-family: 'Rubik', sans-serif;
 }
-.nav {
-    list-style: none;
-}
 img {
     width: 100%;
 }
+a {
+    font-weight: 700;
+    color:#FF7918;
+    text-decoration: none;
+}
+a:visited {
+    color: #742800;
+}
+a:hover {
+    font-weight: 800;
+}
+a:focus {
+    font-weight: 800;
+    text-decoration: underline;
+    border: none;
+    /*cant remove the border from the focus state*/
+}
+a:active {
+    font-weight: 800;
+    color: red;
+}   
