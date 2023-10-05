@@ -61,19 +61,3 @@ h4 {
 img {
     width: 100%;
 }
-.contact {
-    color:blue;
-    text-decoration: none;
-}
-.contact:visited {
-    color: purple;
-}
-.contact:hover,
-.contact:focus {
-    text-decoration: underline;
-}
-.contact:active {
-    color:black;
-    text-decoration: underline;
-    font-weight: bold;
-}
