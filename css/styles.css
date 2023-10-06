@@ -11,15 +11,10 @@ font-family: 'Rubik', sans-serif; 400 500 700
 body {
     background: #FDFAF8;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     color: #4E4C4C;
     line-height: 1.6;
-}
-@media (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
 }
 h1 {
     font-weight: 700;
@@ -28,9 +23,8 @@ h1 {
     font-family: 'Maven Pro', sans-serif;
 }
 .h1_subtitle {
-    /*why is this not working?*/
     font-weight: 700;
-    font-size: 1.7em;
+    font-size: 70%;
     line-height: 1.2;
     font-family: 'Maven Pro', sans-serif;
 }
@@ -59,24 +53,26 @@ img {
     width: 100%;
 }
 a {
-    font-weight: 700;
+    font-weight: 400;
     color:#FF7918;
-    text-decoration: none;
+    text-decoration: underline;
 }
 a:visited {
-    color: #742800;
+    color: #FF7918;
 }
 a:hover {
-    font-weight: 800;
+    font-weight: 400;
+    color: #742800;
 }
 a:focus {
-    font-weight: 800;
-    text-decoration: underline;
-    border: none;
-    /*cant remove the border from the focus state*/
+    font-weight: 400;
+    outline-color: #faaf78;
+    outline-style: dotted;
+    color: #742800;
+    outline-width: 1px;
 }
 a:active {
-    font-weight: 800;
+    font-weight: 400;
     color: red;
 }   
 .button,
