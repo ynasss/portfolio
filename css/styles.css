@@ -142,8 +142,6 @@ header {
 	-moz-box-shadow: 0 11px 29px rgba(176, 165, 158, 0.3)  ; 
     }
 .nav {
-    display: inline-block;
-    width: 100%; 
     list-style-type: none;
     padding: 0;
 }
