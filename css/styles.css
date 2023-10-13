@@ -123,7 +123,7 @@ figure {
     display: inline-block;
     width: 100%;
 }
-.logo {
+a.logo {
     color: #4E4C4C; /*why is it not working..*/
     font-family: 'Maven Pro';
     font-size: 12px;
@@ -135,7 +135,6 @@ header {
     position: fixed;
     width: 100%;
     background-color: #e9ded6;
-    text-align: center;
     padding: 8px 0;
     box-shadow: 0 11px 29px rgba(176, 165, 158, 0.3)  ; 
 	-webkit-box-shadow: 0 11px 29px rgba(176, 165, 158, 0.3)  ; 
@@ -144,6 +143,7 @@ header {
 .nav {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 .nav > li {
     display: inline-block;
@@ -178,6 +178,25 @@ footer {
     width: 100%;
     background-color: #dfdfdf;
     padding: 16px 0px;
+}
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.recent-projects_image {
+    justify-content: center;
 }
 @keyframes color-change {
     0% {fill: #edc655;}
@@ -215,23 +234,19 @@ footer {
         font-size: 18px;
     }
     header {
-        text-align: unset;
-        padding: 20px 0 13px;
+        padding: 20px 0px;
       }
-    .nav {
-        width: auto;
-        float: right;
-        margin-top: 4px;
-      }
+
     .column {
         width: 50%;
-        float: left;
-        padding: 8px;
     }
-    .row:after {
-        clear: both;
-        display: table;
-          }
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .row {
+        flex-direction: row;  
+    }
 }
 @media only screen and (min-width: 1024px) {
     .recent-projects_image {
