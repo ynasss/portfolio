@@ -42,7 +42,8 @@ h2 {
     margin-block-end: 16px;
     text-align: center;
 }
-h3 {
+h3,
+.info-wrapper_heading {
     font-weight: 800;
     font-size: 0.8em;
     line-height: 1.2;
@@ -56,11 +57,11 @@ h4 {
     line-height: 1.2;
     font-family: 'Rubik', sans-serif;
 }
+p {
+    max-width: 700px;
+}
 p.info-wrapper_heading {
     font-weight: 700;
-}
-img {
-    width: 100%;
 }
 a {
     color:#FF7918;
@@ -113,9 +114,15 @@ figure {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
+
 /* Layout styling */
 .container {
     padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
 }
 .hero {
     background-color: #FDFAF8;
@@ -164,6 +171,9 @@ header {
 }
 main {
     padding-top: 99px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 .social > ul > li {
     list-style-type: none;
@@ -199,15 +209,36 @@ header .container {
 .recent-projects_image {
     justify-content: center;
 }
+.full-scr_img {
+    width: 100%;
+
+}
+img {
+    width: 100%;
+}
+#ab_img,
+#prototype_img {
+    max-height: 400px;
+    width: auto;
+}
+.info-wrapper_list-item {
+    font-size: 0.8em;
+}
+.list_label {
+    font-weight: 800;
+}
 @media only screen and (min-width: 640px) {
-    body {
-        font-size: 18px;
+    main {
+        gap: 3em;
+        padding-left: 2em;
+        padding-right: 2em;
     }
     header {
         padding: 20px 0px;
       }
     .container {
         padding: 0 16px;
+        gap: 3em;
     }
 
     .column {
@@ -226,24 +257,46 @@ header .container {
     }
     .info-wrapper_content {
         min-width: 320px;
-        max-width: 400px;
+        max-width: 300px;
+    }
+    .text_container {
+        width: 50%;
+    }
+    .img_container {
+        width: 50%;
+        align-content: center;
+    }
+    .img_container.ab_img,
+    .img_container.prototype_img {
+        align-items: center;
     }
 }
 @media only screen and (min-width: 1024px) {
+    
     body {
         font-size: 20px;
+    }main {
+        gap: 4em;
+        padding-left: 4em;
+        padding-right: 4em;
     }
+
     .recent-projects_image {
         width: 65%;
     }
     .recent-projects_info {
         width: 35%;
     }
+    
     .container {
-        max-width: 1440px;
+        max-width: 1100px;
         margin-left: auto;
         margin-right: auto;
         padding: 0 32px;
+        gap: 4em;
+    }
+    .info-wrapper_list-item {
+        font-size: 0.6em;
     }
 }
 @media only screen and (min-width: 1440px) {
