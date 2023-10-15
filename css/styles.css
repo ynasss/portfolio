@@ -178,19 +178,32 @@ main {
     flex-direction: column;
     gap: 2em;
 }
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
 .social > ul > li {
     list-style-type: none;
     max-width: 48px;
     position: relative;
     right: 0px;
 }
-.social > ul {
-    padding-inline-start: 0;
-}
 footer {
     width: 100%;
-    background-color: #dfdfdf;
+    background-color: #454240;
     padding: 16px 0px;
+    color: #FDFAF8;
+}
+.container.container_footer {
+    align-items: center;
+    gap: 8px;
+}
+#contactMe {
+    color: #FDFAF8;
+}
+p.copyright{
+margin-block-start: 0;
+margin-block-end: 0;
 }
 header .container {
     display: flex;
@@ -230,6 +243,21 @@ img {
 .list_label {
     font-weight: 800;
 }
+.main-message {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 1em 0;
+    }
+    .main-message > p {
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+    .personas-journeys{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
 @media only screen and (min-width: 640px) {
     main {
         gap: 3em;
@@ -275,6 +303,18 @@ img {
     .img_container.prototype_img {
         align-items: center;
     }
+    .personas_wrapper {
+        width: 100%;
+    }
+    .text_container_personas {
+        gap: 2em;
+    }
+    .main-message {
+        max-width: 730px;
+    }
+    .image_wrapper.row {
+        align-content: baseline;
+    }
 }
 @media only screen and (min-width: 1024px) {
     
@@ -303,15 +343,11 @@ img {
     .info-wrapper_list-item {
         font-size: 0.6em;
     }
-    .main-message {
-        display: flex;
-        flex-direction: column;
-        padding: 1em 2em 1em 6em;
-        gap: 1em;
+    .text_container_personas {
+        gap: 3em;
     }
-    .main-message > p {
-        margin-block-start: 0;
-        margin-block-end: 0;
+    .main-message {
+        max-width: 900px;
     }
 }
 @media only screen and (min-width: 1440px) {

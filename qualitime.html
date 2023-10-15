@@ -142,9 +142,13 @@
                 <div class="personas-journeys_container">
                     <div class="personas-journeys main-info">
                         <h3>Creating User Personas</h3>
-                        <div class="row img-text_wrapper">
-                            <div class="text_container column">
-                                <div class="primary">
+                        <div class="personas_wrapper column">
+                            <picture class="img_container_personas">
+                                <source srcset="img/qualytime/personas_@x1.jpg" media="(max-width:767px)">
+                                <img src="img/qualytime/personas_@x2.jpg" alt="User Personas">
+                            </picture>
+                            <div class="text_container_personas row">
+                                <div class="primary main-message">
                                     <h3>Primary</h3>
                                     <p>A die-hard-hobbyist- for them, their creations are an
                                         important
@@ -154,7 +158,7 @@
                                         For them, finding the “right” teacher is a main priority.
                                     </p>
                                 </div>
-                                <div class="secondary">
+                                <div class="secondary main-message">
                                     <h3>Secondary</h3>
                                     <p>A casual hobby-enthusiast: they enjoy spending their limited
                                         free
@@ -165,10 +169,6 @@
                                     </p>
                                 </div>
                             </div>
-                            <picture class="img_container column">
-                                <source srcset="img/qualytime/persona1_mobile.jpg" media="(max-width:767px)">
-                                <img src="img/qualytime/personas_desktop_.jpg" alt="User Personas">
-                            </picture>
                         </div>
                         <button onclick="toggleDetails('journey-details')">See more</button>
                     </div>
@@ -182,20 +182,22 @@
                                 tasks
                                 more effortlessly.</p>
                         </div>
-                        <figure class="full-scr_img journey-map-1">
-                            <picture>
-                                <source srcset="img/qualytime/journeymap_1.jpg" media="(max-width:767px)">
-                                <img src="img/qualytime/journeymap_1@2x.jpg" alt="journey map">
-                            </picture>
-                            <figcaption>The Journey of choosing and preparing for a hobby project</figcaption>
-                        </figure>
-                        <figure class="full-scr_img journey-map-2">
-                            <picture>
-                                <source srcset="img/qualytime/journeymap_2.jpg" media="(max-width:767px)">
-                                <img src="img/qualytime/journeymap_2@2x.jpg" alt="journey map">
-                            </picture>
-                            <figcaption>The Journey of booking a call with a teacher</figcaption>
-                        </figure>
+                        <div class="row journey_wrapper">
+                            <figure class="full-scr_img journey-map-1">
+                                <picture>
+                                    <source srcset="img/qualytime/journeymap_1.jpg" media="(max-width:767px)">
+                                    <img src="img/qualytime/journeymap_1@2x.jpg" alt="journey map">
+                                </picture>
+                                <figcaption>The Journey of choosing and preparing for a hobby project</figcaption>
+                            </figure>
+                            <figure class="full-scr_img journey-map-2">
+                                <picture>
+                                    <source srcset="img/qualytime/journeymap_2.jpg" media="(max-width:767px)">
+                                    <img src="img/qualytime/journeymap_2@2x.jpg" alt="journey map">
+                                </picture>
+                                <figcaption>The Journey of booking a call with a teacher</figcaption>
+                            </figure>
+                        </div>
                     </div>
                 </div>
                 <div class="research-conclusion main-message">
@@ -317,7 +319,7 @@
                     </div>
                     <div class="main-message">
                         <h3>Test Objectives</h3>
-                        <ul class="test-objectives_list main-message">
+                        <ul class="test-objectives_list">
                             <li class="test-objectives_list-item"><span class="list_label">Asses Navigation Efficiency:
                                 </span>Evaluate the user's ability to navigate the app effortlessly, focusing on
                                 elements like search functionality, menus, browsing experience, and tab accessibility.
@@ -391,42 +393,34 @@
         </section>
     </main>
     <footer id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>You can get in touch via <a href="mailto:myemail@gmail.com">mail</a> or <a
-                    href="skype:my_skype">skype</a></p>
-            <div class="social">
-                <!--still have no linkedin account-->
-                <ul>
-                    <li>
-                        <a class="contact" href="https://www.linkedin.com/" target="_blank">
-                            <svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0"
-                                viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <g>
-                                    <path
-                                        d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z"
-                                        fill="#007BB5" />
-                                    <g>
-                                        <rect fill="#FFFFFF" height="14" width="4" x="7" y="11" />
-                                        <path
-                                            d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z"
-                                            fill="#FFFFFF" />
-                                        <circle cx="9" cy="8" fill="#FFFFFF" r="2" />
-                                    </g>
-                                </g>
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <p>Copyright Alexandra 23</p>
+        <div class="container container_footer">
+            <h3 id="contactMe">You can get in touch via <a href="mailto:myemail@gmail.com">mail</a> or <a
+                    href="skype:my_skype">skype</a></h3>
+            <a class="contact" href="https://www.linkedin.com/" target="_blank">
+                <svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32"
+                    width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g>
+                        <path
+                            d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z"
+                            fill="#007BB5" />
+                        <g>
+                            <rect fill="#FFFFFF" height="14" width="4" x="7" y="11" />
+                            <path
+                                d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z"
+                                fill="#FFFFFF" />
+                            <circle cx="9" cy="8" fill="#FFFFFF" r="2" />
+                        </g>
+                    </g>
+                    <g />
+                    <g />
+                    <g />
+                    <g />
+                    <g />
+                    <g />
+                </svg>
+            </a>
+            <p class="copyright">Copyright Alexandra 23</p>
         </div>
     </footer>
 </body>
