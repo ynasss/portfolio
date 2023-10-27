@@ -13,18 +13,21 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@700;900&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&family=Rubik:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/87e6109f91.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <div class="container">
-             <!-- may be one day i have a logo <img src="https://via.placeholder.com/150x50?text=Logo" alt="placeholder logo"> -->
-             <a class="logo" href="index.html">Alexandra Radoulova</a>
+        <div class="container navtoggle" id="myNavtoggle">
+            <!-- may be one day i have a logo <img src="https://via.placeholder.com/150x50?text=Logo" alt="placeholder logo"> -->
+            <a class="logo" href="index.html">Alexandra Radoulova</a>
             <nav>
                 <ul class="nav">
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                class="fas fa-bars"></i></a></li>
                 </ul>
             </nav>
         </div>
@@ -32,7 +35,8 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Hi, my name is Alexandra <span class="h1_subtitle">I am an aspiring UX Designer and Researcher based in Austria</span>
+                <h1>Hi, my name is Alexandra <span class="h1_subtitle">I am an aspiring UX Designer and Researcher based
+                        in Austria</span>
                 </h1>
             </div>
         </section>
@@ -61,7 +65,8 @@
                     <div class="column recent-projects_image">
                         <picture>
                             <source srcset="img/7circles/SevenCircles-1.jpg" media="(max-width:767px)">
-                            <img class = "recent-projects_image-img" src="img/7circles/SevenCircles.jpg" alt="7circles homepage">
+                            <img class="recent-projects_image-img" src="img/7circles/SevenCircles.jpg"
+                                alt="7circles homepage">
                         </picture>
                     </div>
                     <div class="column recent-projects_info">
@@ -107,7 +112,8 @@
             <p class="copyright">Copyright Alexandra 23</p>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 
