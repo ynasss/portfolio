@@ -147,8 +147,23 @@ a.logo {
     text-decoration: none;
 }
 .navtoggle li .icon {
-    padding-right: 0;
+    position: absolute;
+    right: 24px;
+    top: 0;
+
 }
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+.navtoggle,
+.navtoggle.responsive {
+    position: relative;
+}
+.navtoggle.responsive li {
+    display: flex;
+    flex-direction: column;
+
+  }
 header {
     /*position: relative;*/
     position: fixed;
@@ -218,9 +233,6 @@ header .container {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 16px;
-}
-.navtoggle li:not(:last-child) {
-    display: none;
 }
 .row {
     margin: 24px 0;
