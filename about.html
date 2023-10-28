@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Alexandra</title>
+    <title>Alexandra's UX Portfolio</title>
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -13,20 +12,23 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@700;900&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&family=Rubik:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/87e6109f91.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
     <header>
         <div class="container">
-            <!-- may be one day i have a logo <img src="https://via.placeholder.com/150x50?text=Logo" alt="placeholder logo"> -->
+            <div class="navtoggle" id="myNavtoggle">
             <a class="logo" href="index.html">Alexandra Radoulova</a>
             <nav>
                 <ul class="nav">
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                class="fas fa-bars"></i></a></li>
                 </ul>
             </nav>
+        </div>
         </div>
     </header>
     <main>

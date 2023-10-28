@@ -142,14 +142,16 @@ figure {
 a.logo {
     color: #4E4C4C; /*why is it not working..*/
     font-family: 'Maven Pro';
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 900;
     text-decoration: none;
 }
 .navtoggle li .icon {
     position: absolute;
-    right: 24px;
+    right: 0;
     top: 0;
+    padding-right: 0;
+    padding-left: 0;
 
 }
 .navtoggle li:not(:last-child) {
@@ -158,12 +160,22 @@ a.logo {
 .navtoggle,
 .navtoggle.responsive {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.navtoggle.responsive .nav{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    gap: 1em;
 }
 .navtoggle.responsive li {
     display: flex;
-    flex-direction: column;
-
-  }
+}
+.navtoggle.responsive .nav > li > a {
+    padding-left: 0;
+}
 header {
     /*position: relative;*/
     position: fixed;
@@ -181,10 +193,10 @@ header {
 }
 
 .nav > li > a{
-    padding: 0px 16px;
+    padding: 0;
     text-transform: lowercase;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
     color: #282828;
     text-decoration: none;
 }
@@ -303,6 +315,12 @@ img {
     header {
         padding: 20px 0px;
       }
+    .nav {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        padding: 0 1em;
+    }
     .nav > li {
         display: inline-block;
       }
@@ -311,6 +329,11 @@ img {
       }
     .navtoggle li:last-child {
         display :none;
+    }
+    .navtoggle { 
+        justify-content: space-between; 
+        flex-direction: row;
+        gap: 1em;
     }
     .container {
         padding: 0 16px;
