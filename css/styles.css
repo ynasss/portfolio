@@ -88,6 +88,10 @@ a:focus {
 a:active {
     color: #E61C1C;
 } 
+button {
+    border-width: 0;
+    border-style:none;
+}
 /*button,*/ 
 .button {
     display: inline-block;
@@ -294,8 +298,9 @@ img {
     }
 .profile-img_wrapper {
         /*height: 300px;*/
-        display: block;
+        display: flex;
         line-height: 0;
+        justify-content: center;
     }
 .profile-img {
         /*height: 100%;*/
@@ -437,7 +442,7 @@ img {
         max-width: 900px;
     }
     .profile-img_wrapper {
-        height: 600px;
+        height: 400px;
     }
 }
 @media only screen and (min-width: 1440px) {
