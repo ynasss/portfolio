@@ -91,8 +91,14 @@ a:active {
 button {
     border-width: 0;
     border-style:none;
+    display: flex;
+    align-items: flex-start;
+    background-color: transparent;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+    font-size: 0.8em;
+    color: #282828;
 }
-/*button,*/ 
 .button {
     display: inline-block;
     color: #ffffff;
