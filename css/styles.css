@@ -129,6 +129,10 @@ button:hover {
     background-color: transparent;
     border: 3px solid #FF9243;
 }
+.testing,
+.research_container {
+    align-items: flex-start;
+}
 figcaption {
     font-size: 0.75em;
 }
